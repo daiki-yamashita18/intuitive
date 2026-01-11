@@ -1,7 +1,11 @@
 {
   "name": "intuitive",
   "scripts": {
-    "dev": "bun run --hot src/backend/index.ts"
+    "dev": "bun run dev:backend & bun run dev:frontend",
+    "dev:backend": "bun run --hot src/backend/index.ts",
+    "dev:frontend": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
     "hono": "^4.11.3",
